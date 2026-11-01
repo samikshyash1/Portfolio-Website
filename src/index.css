@@ -1,0 +1,132 @@
+
+@import "tailwindcss";
+
+/* Slightly refined typography scale across the whole website */
+@theme {
+  --text-xs: 0.8125rem;
+  --text-sm: 0.9375rem;
+  --text-base: 1.0625rem;
+  --text-lg: 1.1875rem;
+  --text-xl: 1.3125rem;
+  --text-2xl: 1.625rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.375rem;
+  --text-5xl: 3.125rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+  --text-8xl: 5.25rem;
+}
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color-scheme: light;
+  background: #faf6f2;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  --bg: #faf6f2;
+  --surface: #f3e7e4;
+  --accent: #c99fa3;
+  --accent-light: #e8cfcc;
+  --text: #493b3b;
+  --muted: #8f7d79;
+  --border: #eadeda;
+  --white: #fffdfb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .heading-font {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+}
+
+p {
+  font-family: "DM Sans", sans-serif;
+}
+
+::selection {
+  background: #e8cfcc;
+  color: #493b3b;
+}
+
+.section-container {
+  width: 100%;
+  max-width: 1152px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+.section-padding {
+  padding-block: 104px;
+}
+
+.section-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #b88a8e;
+}
+
+.section-heading {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3rem, 5vw, 4.25rem);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.section-description {
+  font-size: 18px;
+  line-height: 1.85;
+  color: var(--muted);
+}
+
+.accent-text {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--accent);
+}
+
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding-block: 76px;
+  }
+
+  .section-container {
+    padding-inline: 20px;
+  }
+
+  .section-heading {
+    font-size: clamp(2.75rem, 10vw, 3.5rem);
+  }
+
+  .section-description {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+}

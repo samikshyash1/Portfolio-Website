@@ -1,0 +1,34 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+
+  <!-- Dusty rose background -->
+  <rect width="64" height="64" rx="17" fill="#D9B5B8"/>
+
+  <!-- Daisy petals -->
+  <g transform="translate(32 29)" fill="#FFF9F5">
+    <ellipse cx="0" cy="-11" rx="5.2" ry="9"/>
+    <ellipse cx="0" cy="-11" rx="5.2" ry="9" transform="rotate(45)"/>
+    <ellipse cx="0" cy="-11" rx="5.2" ry="9" transform="rotate(90)"/>
+    <ellipse cx="0" cy="-11" rx="5.2" ry="9" transform="rotate(135)"/>
+    <ellipse cx="0" cy="-11" rx="5.2" ry="9" transform="rotate(180)"/>
+    <ellipse cx="0" cy="-11" rx="5.2" ry="9" transform="rotate(225)"/>
+    <ellipse cx="0" cy="-11" rx="5.2" ry="9" transform="rotate(270)"/>
+    <ellipse cx="0" cy="-11" rx="5.2" ry="9" transform="rotate(315)"/>
+  </g>
+
+  <!-- Warm flower center -->
+  <circle cx="32" cy="29" r="6" fill="#C99A78"/>
+  <circle cx="32" cy="29" r="2.5" fill="#E9C99D"/>
+
+  <!-- Tiny stem -->
+  <path d="M32 38 Q32 43 28 47"
+        fill="none"
+        stroke="#754B55"
+        stroke-width="2"
+        stroke-linecap="round"/>
+
+  <!-- Small leaf -->
+  <path d="M30 43 Q21 39 22 46 Q27 49 30 43Z"
+        fill="#754B55"/>
+
+</svg>
